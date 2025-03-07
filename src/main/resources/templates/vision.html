@@ -1,14 +1,25 @@
 <!DOCTYPE html>
-<html lang="es" xmlns:th="http://www.thymeleaf.org">
+<html lang="es" xmlns:th="http://www.thymeleaf.org" xmlns:sec="http://www.thymeleaf.org/extras/spring-security">
 <head>
     <meta charset="UTF-8">
-    <title>Visión</title>
+    <title>Visión - RollerSpeed</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
 <body>
-<header th:replace="fragments/navbar :: navbar"></header>
+<div th:replace="~{fragments/navbar :: navbar}"></div>
+
 <div class="container mt-4">
-    <h1>Nuestra Visión</h1>
-    <p>Ser una institución líder en innovación educativa.</p>
+    <h1>🌍 Visión</h1>
+    <p>
+        Aspiramos a ser la escuela de patinaje líder en la región, reconocida por la excelencia en la enseñanza, el desarrollo de talento y la promoción del patinaje como una disciplina accesible para todos. En RollerSpeed, queremos convertirnos en un referente en la formación de atletas de alto rendimiento y patinadores apasionados, capaces de competir a nivel nacional e internacional.
+    </p>
+    <p>
+        Nos proyectamos como un espacio de innovación y crecimiento, donde la enseñanza del patinaje evoluciona constantemente con metodologías avanzadas y tecnología de última generación. Queremos fomentar una comunidad vibrante de patinadores que encuentren en nuestra escuela un lugar para compartir experiencias, superar desafíos y construir amistades duraderas.
+    </p>
+    <p>
+        A futuro, buscamos expandir nuestra presencia mediante nuevas sedes, programas de becas deportivas y alianzas estratégicas con federaciones y clubes de patinaje. Nos esforzamos por ser una escuela que no solo enseña a patinar, sino que transforma vidas a través del deporte.
+    </p>
+    <a th:href="@{/home}" class="btn btn-primary mt-3">Volver a Inicio</a>
 </div>
 </body>
 </html>
